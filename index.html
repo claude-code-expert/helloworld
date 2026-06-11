@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Input Echo</title>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      max-width: 480px;
+      margin: 60px auto;
+      padding: 0 16px;
+    }
+    .row {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+    input {
+      flex: 1;
+      padding: 8px 12px;
+      font-size: 16px;
+    }
+    button {
+      padding: 8px 16px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    #output {
+      font-size: 20px;
+      min-height: 28px;
+      color: #1a73e8;
+    }
+  </style>
+</head>
+<body>
+  <h1>입력값 출력하기</h1>
+  <div class="row">
+    <input id="userInput" type="text" placeholder="값을 입력하세요" />
+    <button id="submitBtn">출력</button>
+  </div>
+  <div id="output"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
